@@ -4,19 +4,283 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MY LIfe</title>
+    <title>CSS Documentation</title>
+    <link rel="stylesheet" href="style.css"
 </head>
+
 <body>
-<nav id='mynavbar'>
-    <h1>My Life</h1>
-</nav>
-<ul>
-    <li>Introduction</li>
-    <li>About Me</li>
-    <li>What I do</li>
-    <li>My Education</li>
-    <li>My  Life Currently</li>
-</ul>
+    <!-- ----------------Side Nav---------------------- -->
+    <nav id="navbar">
+        <head><h1 class='doc-head'>CSS Documentation</h1></head>
+        <ul>
+          <a  class='nav-link' href="#CSS_Introduction" ><li>CSS Introduction</li></a>
+          <a class='nav-link' href="#What_you_should_know_already" ><li>What you should know already </li></a>
+     <a class='nav-link' href="#CSS_Syntax_and_Selectors"><li>CSS Syntax and Selectors</li></a>
+          <a class='nav-link' href="#CSS_Colors" ><li> CSS Colors</li></a>
+        <a class='nav-link' href="#CSS_Background" ><li>CSS Background</li></a>
+          <a class='nav-link' href="#CSS_Borders" ><li> CSS Borders</li></a>
+      <a class='nav-link' href="#CSS_Padding_and_Margins" ><li>CSS Padding and Margins</li></a>
+          <a class='nav-link' href="#CSS_Links" ><li>CSS Links</li></a>
+        <a class='nav-link' href="#CSS_Lists" ><li>CSS Lists</li></a>
+      <a class='nav-link' href="#CSS_Reference"><li>CSS Reference</li></a>
+        </ul>
+      </nav>
+      <!-- ---------------------------End of Side Nav--------------------------- -->
+      
+      <main id="main-doc">
+        <!-- ------------------------------------CSS Introduction----------------------- -->
+        <section class="main-section" id="CSS_Introduction">
+        <header> CSS Introduction</header>
+          <article>
+<p>CSS stands for Cascading Style Sheets.Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
+Its responsible how HTML elements are to be displayed on screen, paper, or in other media. It can control the layout of many web pages at once.</p>
+
+            </artice>
+          </section>
+          <!-- ---------------------------------What you should Know Already------------- -->
+        <section class="main-section" id="What_you_should_know_already">
+          <header>What you should already know</header>
+          <article>
+            <p>This documentation assumes you have the following basic knowledge:</p>
+            <li type='1'>Basic knowledge of how to use computer hardware and text editors.</li>
+            <li type='1'>Basic knowledge of HyperText Markup Language (HTML).</li>
+            </artice>
+          </section>
+          <!-- -------------------------------------CSS Syntanx and selectors------------ -->
+        <section class="main-section" id='CSS_Syntax_and_Selectors'>
+          <header>CSS Syntax and Selectors</header>
+          <article>
+                <h3>CSS Syntax</h3>
+                A CSS rule-set consists of a selector and a declaration block as seen in the example below:
+                <code>
+                    h1{
+                        Background-color:cyan;
+                        font-family:Arial;
+                    };
+                </code>
+                <h4>Example Explained;</h4>
+                <li>h1 is the selector</li>
+                <li>Background-color and font-family are the properties.</li>
+                <li>Cyan and Arial are the values.</li>
+                <li>Properties and values combined form a declaration block.</li>
+                <h4>CSS selector</h4>
+                
+               <p> The selector points to the HTML element you want to style. The declaration block contains one or more declarations separated by semicolons.Each declaration includes a CSS property name and a value, separated by a colon. A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces. <p> 
+                <p>Types incude:</p>
+                <li> Class seletors</li>
+                <li> Id selectors</li>
+                <li>Universal selectors</li>
+                <li>Grouping selectors</li>
+          </article>
+          </section>
+          <!-- ---------------------------------CSS Colors ---------------- -->
+        <section class="main-section" id="CSS_Colors">
+          <header>CSS Colors</header>
+          <article>
+     <p>Colors are specified using color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+     <p>A color can be specified by using a color name as seen in the Example Below :<p>
+         <p style='color:#fff; background-color:red; margin-right:90%; text-align:center;' >Red</p>
+        <p style='color:#fff; background-color:blue; margin-right:90%; text-align:center;'>Blue</p>
+         <p style='color:#fff; background-color:green; margin-right:90%; text-align:center;'>Green</p>
+         <p style='color:#fff; background-color:cyan; margin-right:90%; text-align:center;'>Cyan</p>
+         <h3>CSS Color Values</h3>
+<p>In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:</p>
+<h4>CSS RGB Value</h4>
+<p>A color can be specified as an RGB value, using this formula:</p>
+
+<p><b>rgb(red, green, blue)</b></p>
+
+<p>Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+
+For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.
+
+To display the color black, all color parameters must be set to 0, like this: rgb(0, 0, 0).
+
+To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255).</p>
+<p style='color:#fff; background-color:rgb(255, 165, 0); text-align:center; margin-right:70%' >rgb(255, 165, 0)</p>
+<p style='color:#fff; background-color:rgb(0, 0, 255); text-align:center;margin-right:70%' >rgb(0, 0, 255)</p>
+<p style='color:#fff; background-color:rgb(238, 130, 238); text-align:center; margin-right:70%' >rgb(238, 130, 238)</p>
+<h4>CSS HEX Value</h4>
+<p>In CSS, a color can be specified using a hexadecimal value in the form:<p>
+
+<p><b>#rrggbb</b></p>
+
+<p>Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).<p>
+        <p style='color:#fff; background-color:#ffa500;  text-align:center; margin-right:70%'>#ffa500</p>
+        <p style='color:#fff; background-color:#0000ff;  text-align:center; margin-right:70%'>#0000ff</p>
+        <p style='color:#fff; background-color:#ee82ee;  text-align:center; margin-right:70%'>#ee82ee</p>
+        <h4>HSL Value</h4>
+        <p>In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:</p>
+        
+        <p><b>hsl(hue, saturation, lightness)</b></p>
+        
+        <p>Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</p>
+        
+        <p>Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.</p>
+        
+        <p>Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white.</p>
+         <p style='color:#fff; background-color:hsl(39, 100%, 50%); text-align:center; margin-right:70%'>hsl(39, 100%, 50%)</p>
+         <p style='color:#fff; background-color:hsl(240, 100%, 50%); text-align:center; margin-right:70%'>hsl(240, 100%, 50%)</p>
+         <p style='color:#fff; background-color:hsl(300, 76%, 72%); text-align:center; margin-right:70%'>hsl(300, 76%, 72%)</p>
+
+          </article>
+          </section>
+          <!-- ----------------------------------CSS Background------------------ -->
+        <section class="main-section" id="CSS_Background">
+          <header>CSS Background</header>
+<p>The CSS background defines the background effects for elements.</p>
+
+<p>CSS background properties include:</p>
+
+<li type='a'>background-color</li>
+<li type='a'>background-image</li>
+<li type='a'>background-repeat</li>
+<li type='a'>background-attachment</li>
+<li type='a'>background-position</li>
+<h4>CSS background-color</h4>
+<p>The background-color property specifies the background color of an element.</p>
+
+<h4>Example</h4>
+<p>The background color of a page is set like this:<p>
+
+<code>body {
+  background-color: lightblue;
+};</code>
+<h4>CSS background-image</h4>
+<p>The background-image property specifies an image to use as the background of an element.
+
+By default, the image is repeated so it covers the entire element.<p>
+
+<h4>Example</h4>
+<p>The background image for a page can be set like this:</p>
+<code>
+body {
+  background-image: url("andela.gif");
+}
+</code>
+  
+          </section>
+          <!-- ----------------------CSS Borders----------------- -->
+        <section class="main-section" id="CSS_Borders">
+          <header>CSS Borders</header>
+          <article>
+                <p>CSS Border Properties</p>
+                <p>The CSS border properties allow you to specify the style, width, and color of an element's border as seen in the example below.</p>
+                <p style=' border-style: solid; border-width: 5px; text-align:center;'>Hey, I have borders</p>
+                <h4>Below all CSS Border Properties</h4>
+
+<li type='1'>border	Sets all the border properties in one declaration</li>
+<li type='1'>border-bottom	Sets all the bottom border properties in one declaration</li>
+<li type='1'>border-bottom-color	Sets the color of the bottom border</li>
+<li type='1'>border-bottom-style	Sets the style of the bottom border</li>
+<li type='1'>border-bottom-width	Sets the width of the bottom border</li>
+<li type='1'>border-color	Sets the color of the four borders</li>
+<li type='1'>border-left	Sets all the left border properties in one declaration</li>
+<li type='1'>border-left-color	Sets the color of the left border</li>
+<li type='1'>border-left-style	Sets the style of the left border</li>
+<li type='1'>border-left-width	Sets the width of the left border</li>
+<li type='1'>border-radius	Sets all the four border-*-radius properties for rounded corners</li>
+<li type='1'>border-right	Sets all the right border properties in one declaration</li>
+<li type='1'>border-right-color	Sets the color of the right border</li>
+<li type='1'>border-right-style	Sets the style of the right border</li>
+<li type='1'>border-right-width	Sets the width of the right border</li>
+<li type='1'>border-style	Sets the style of the four borders</li>
+<li type='1'>border-top	Sets all the top border properties in one declaration</li>
+<li type='1'>border-top-color	Sets the color of the top border</li>
+<li type='1'>border-top-style	Sets the style of the top border</li>
+<li type='1'>border-top-width	Sets the width of the top border</li>
+<li type='1'>border-width	Sets the width of the four borders</li>
+          </article>
+          </section>
+          <!-- --------------------  CSS Padding and Margins--------------- -->
+        <section class="main-section" id="CSS_Padding_and_Margins">
+          <header>CSS Padding and Margins</header>
+          <article>
+                <h3>CSS Margins</h3>
+                <p>The CSS margin properties are used to create space around elements, outside of any defined borders.
+                
+                With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+                <h4>All CSS Margin Properties</h4>
+
+                <li type='i'>margin - A shorthand property for setting the margin properties in one declaration</li>
+<li type='i'>margin-bottom - Sets the bottom margin of an element</li>
+ <li type='i'>margin-left -	Sets the left margin of an element</li>
+     <li type='i'>margin-right -	Sets the right margin of an element</li>
+         <li type='i'>margin-top -	Sets the top margin of an element</li>
+         <p style=' border-style: solid; border-width: 2px; margin:5px; text-align:center;'>Hey, I have margins</p>
+         <h3>CSS Padding</h3>
+<p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+
+With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+All CSS Padding Properties
+
+<li type='i'>padding -	A shorthand property for setting all the padding properties in one declaration</li>
+        <li type='i'>padding-bottom	- Sets the bottom padding of an element</li>
+                <li type='i'>padding-left -	Sets the left padding of an element</li>
+                        <li type='i'>padding-right -	Sets the right padding of an element</li>
+                                <li type='i'>padding-top -	Sets the top padding of an element</li>
+
+                                <p style=' border-style: solid; border-width: 5px; text-align:center;padding:20px'>Hey, I have paddings</p>
+          </article>
+          </section>
+          <!-- -----------------------CSS Links------------------------- -->
+        <section class="main-section" id="CSS_Links">
+          <header>CSS Links</header>
+          <article>
+      <p> A link is a selectable connection from one word, picture, or information object to another. In a multimedia environment such as the World Wide Web, such objects can include sound and motion video sequences. The most common form of link is the highlighted word or picture that can be selected by the user (with a mouse or in some other fashion), resulting in the immediate delivery and view of another file. The highlighted object is referred to as an anchor. The anchor<a> reference and the object referred to constitute a hypertext link.</p>
+      <h3>Styling Links</h3>
+<p>Links can be styled with any CSS property (e.g. color, font-family, background, etc.).</p>
+
+<h4>Example</h4>
+<code>
+a {
+  color: hotpink;
+}
+</code>
+          </article>
+          </section>
+          <!-- --------------------------CSS Lists------------------------------- -->
+        <section class="main-section" id="CSS_Lists">
+          <header>CSS Lists</header>
+          <article>
+                <h4>Unordered Lists:</h4>
+                <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                 <li>Coca Cola</li>
+                 <li>Coffee</li>
+                  <li> Tea</li>
+                <li>Coca Cola</li>
+                </ul>
+                <code>ul {
+                        background: #ff9999;
+                        padding: 20px;
+                      }
+                    </code>                      
+                <h4>Ordered Lists:</h4>
+                       <li> Coffee</li>
+                       <li> Tea</li>
+                       <li>Coca Cola</li>
+                       <li>Coffee</li>
+                       <li>Tea</li>
+                       <li>Coca Cola</li>
+                </ul>
+                       <code>ol {
+                            background: #3399ff;
+                            padding: 20px;
+                          }</code>
+                          
+          </article>
+        </section>
+        <!-- -----------------CSS Reference----- -->
+        <section class="main-section" id="CSS_Reference">
+          <header>Reference</header>
+          <article>
+            <li>All the documentation in this page is taken from <a href=" target="_blank">W3Shools</a>
+          </article>
+          </section>
+      </main>
+  
 
 </body>
 </html>
